@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula formulários</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição em Evento</h1>
+    <fieldset>
+    <label for="senha">Nome completo:</label>
+        <input type="name" size="40" margin="0" name="senha">
+        <br></br>
+
+    <label for="e-mail">E-mail:</label>
+    <input type="e-mail" size="35" margin="0" name="e-mail"
+    placeholder="ex: myname@example.com">
+    
+    <br></br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo"
+        value="M" id="masc">
+        <label for="masc">  Masculino</label>
+        <input type="radio" name="sexo"
+        value="F" id="fem">   
+        <label for="fem">  Feminino</label>
+        <br></br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="cargo" size="35"  name="cargo">
+        <br></br>
+
+        <label for="nascimento">Nascimento:</label>
+        <input type="date" size="35"  name="date">
+        <br></br>  
+
+        <label for="number">Telefone:</label>
+        <form action="" method="get">
+            <input type="number" name="telefone"
+                    placeholder="(99)9999-9999" size="10"
+                    maxlength="10">
+            <br></br>        
+    </fieldset>   
+    <h2>Informações da Instituição</h2>
+    <p>Preencha os campos abaixo com as informações da empresa em que trabalha</p>
+    <fieldset>
+        <label for="empresa">Empresa:</label>
+        <input type="empresa" size="40"  name="empresa">
+        <br></br>
+        <label for="endereço5">Endereço completo:</label>
+        <input type="name" size="40"  name="endereço">
+        <br></br>
+        <label for="cidade">Cidade:</label>
+        <input type="name" size="40" name="cidade">
+        <br></br>
+        <label for="name">Nome completo:</label>
+        <input type="name" size="40"  name="senha">
+        <br></br>
+        <label for="select">Estado:</label>
+        <select name=“estado”>
+            <option value=“AC”>Acre</option>
+            <option value=“AM”>Amazonas</option>
+            <option value=“AP”>Amapá</option>
+            <option value=“RO”>Rondônia</option>
+            <option value=“MT”>Mato Grosso</option>
+            <option selected>Selecione</option>
+            </select>
+        <br></br>
+        <label for="funcionários">Quant. Funcionários:</label>
+         <input type="number" size="40"  name="funcionários">
+         <br></br>
+         <label for="textarea">Observações:</label>
+         <textarea name=“mensagem” rows=“50”
+            cols=“120”></textarea>
+    </fieldset>
+    <br>
+    <label for="checkbox">Recibo:</label>
+    <input type="checkbox" id="recibo" name="recibo" p> Emitir em nome da instituição.</p>
+    <button type="submit" form="nameform" value="Submit">Fazer Inscrição</button>
+    
+</body>
+</html>
